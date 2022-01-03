@@ -65,7 +65,7 @@ export default function Home() {
         <div>
           <img
             className="mx-auto h-12 w-auto"
-            src="https://articulate.com/packs/images/logos/logo-9c72d20db654121da524f52cd0542b36.svg"
+            src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
             alt="Workflow"
           />
           <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Sign in to your account</h2>

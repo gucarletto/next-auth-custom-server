@@ -43,8 +43,8 @@ export default function NavBar() {
                   <div className="flex-shrink-0">
                     <img
                       className="h-8 w-auto"
-                      src="https://articulate.com/packs/images/logos/logo-9c72d20db654121da524f52cd0542b36.svg"
-                      alt="Articulate"
+                      src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                      alt="Logo"
                     />
                   </div>
                   <div className="hidden md:block">

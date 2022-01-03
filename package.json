@@ -1,7 +1,7 @@
 {
-  "name": "identity-tech-challenge",
+  "name": "next-auth-custom-server",
   "version": "1.0.0",
-  "author": "articulate",
+  "author": "gucarletto",
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
