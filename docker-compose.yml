@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    command: >
+      sh -c 'yarn dev:migrate &&
+             yarn dev:prisma-client &&
+             yarn dev'
+    env_file:
+      - .env.default
+    ports:
+      - '3000:3000'
+    volumes:
+      - './package.json:/service/package.json'
+      - './src:/service/src'
+      - './prisma:/service/prisma'
+      - './yarn.lock:/service/yarn.lock'
+    depends_on:
+      - postgres
+  postgres:
+    image: postgres:12
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=identity
+    volumes:
+      - postgres:/var/lib/postgresql/data
+    ports:
+      - '5432:5432'
+volumes:
+  postgres:
